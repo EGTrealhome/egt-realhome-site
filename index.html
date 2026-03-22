@@ -33,7 +33,34 @@
     }
   </style>
 </head>
+<!-- LIGHTBOX -->
+<div id="lightbox" style="
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.8);
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+">
 
+  <img id="lightbox-img" style="max-width:90%; max-height:90%; border-radius:10px;">
+
+</div>
+
+<script>
+function openLightbox(src) {
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = src;
+}
+
+document.getElementById("lightbox").onclick = function() {
+  this.style.display = "none";
+}
+</script>
 <body>
 
 <header>
@@ -58,14 +85,38 @@
 <!-- ΜΙΚΡΕΣ ΦΩΤΟ -->
 <div style="display:flex; gap:10px; overflow-x:auto;">
 
-  <img src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/53e91e5f-ea9c-4aa3-84f3-e9b876650aa8-source.webp style="height:80px; border-radius:8px;">
-  <img src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/83c1a077-d24f-4395-9412-73808d286a0c-source.webp style="height:80px; border-radius:8px;">
-  <img src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/f288f152-8fae-456d-aad0-7cafc5c0d731-source.webp style="height:80px; border-radius:8px;">
-  <img src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/7b4e488f-7004-4312-9c8f-cbe19023dead-source.webp style="height:80px; border-radius:8px;">
-  <img src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/36a3bee6-9e14-48bb-af5d-271f49a47e3f-source.webp style="height:80px; border-radius:8px;">
-  <img src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/8833de7c-3c2c-4a30-b2ce-7450b23ad09f-source.webp style="height:80px; border-radius:8px;">
-  <img src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/7015d4d7-ba06-412a-8484-0abc65db9e59-source.webp style="height:80px; border-radius:8px;">
-  <img src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/205e79b1-4975-455b-a329-026ea6f35d26-source.webp style="height:80px; border-radius:8px;">
+  <img 
+  src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/53e91e5f-ea9c-4aa3-84f3-e9b876650aa8-source.webp 
+  onclick="openLightbox(this.src)"
+  style="height:80px; border-radius:8px; cursor:pointer;"
+   <img 
+  src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/83c1a077-d24f-4395-9412-73808d286a0c-source.webp 
+  onclick="openLightbox(this.src)"
+  style="height:80px; border-radius:8px; cursor:pointer;"
+   <img 
+  src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/f288f152-8fae-456d-aad0-7cafc5c0d731-source.webp 
+  onclick="openLightbox(this.src)"
+  style="height:80px; border-radius:8px; cursor:pointer;"
+ <img 
+  src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/7b4e488f-7004-4312-9c8f-cbe19023dead-source.webp 
+  onclick="openLightbox(this.src)"
+  style="height:80px; border-radius:8px; cursor:pointer;"
+   <img 
+  src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/36a3bee6-9e14-48bb-af5d-271f49a47e3f-source.webp 
+  onclick="openLightbox(this.src)"
+  style="height:80px; border-radius:8px; cursor:pointer;"
+  <img 
+  src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/8833de7c-3c2c-4a30-b2ce-7450b23ad09f-source.webp 
+  onclick="openLightbox(this.src)"
+  style="height:80px; border-radius:8px; cursor:pointer;"
+  <img 
+  src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/7015d4d7-ba06-412a-8484-0abc65db9e59-source.webp 
+  onclick="openLightbox(this.src)"
+  style="height:80px; border-radius:8px; cursor:pointer;"
+   <img 
+  src=https://raw.githubusercontent.com/EGTrealhome/egt-realhome-site/refs/heads/main/205e79b1-4975-455b-a329-026ea6f35d26-source.webp 
+  onclick="openLightbox(this.src)"
+  style="height:80px; border-radius:8px; cursor:pointer;"
 </div>
       >
     </div>
